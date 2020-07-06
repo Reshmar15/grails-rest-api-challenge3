@@ -1,0 +1,6 @@
+#Sat, 04 Jul 2020 23:56:55 +0400
+
+info.app.version=0.1
+info.app.name=complete
+grails.env=development
+info.app.grailsVersion=4.0.1

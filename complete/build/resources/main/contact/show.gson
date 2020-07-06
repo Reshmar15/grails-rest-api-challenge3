@@ -1,0 +1,20 @@
+import com.example.Contact
+
+import java.text.SimpleDateFormat
+
+SimpleDateFormat simpleDateFormat = new SimpleDateFormat('M-dd-yyy')
+
+model {
+    Contact contact
+}
+json {
+    hal.links(self: contact, customer: contact.customer)
+    hal.embedded(customer: contact.customer)
+
+    id contact.contactId
+    contactNo contact.contactNo
+    date simpleDateFormat.format(contact.contactsAddedOn)
+
+
+
+}

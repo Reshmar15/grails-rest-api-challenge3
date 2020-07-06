@@ -1,0 +1,10 @@
+import com.example.Contact
+
+model {
+    Contact contact
+}
+json {
+    hal.links(contact)
+
+    id contact.id
+}
